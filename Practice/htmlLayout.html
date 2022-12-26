@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(226, 126, 142);
+        height: 20%;
+        font-size: 150%;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        background-color: skyblue;
+        height: 15%;
+        font-size: 150%;
+      }
+      .navbar a {
+        color: rgb(226, 126, 142);
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: pink;
+        height: 50%;
+        font-size: 150%;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        bottom: 0;
+        height: 15%;
+        font-size: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>About HTML</h1>
+      </div>
+      <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Gallery</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Help</a>
+        <a href="">Login/Signup</a>
+      </div>
+      <div class="body">
+        <p align="center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          porro totam possimus sapiente expedita officia quod ut! Ea expedita
+          nostrum sunt saepe harum reprehenderit minus eum beatae! Dolores fugit
+          veritatis iusto, modi veniam esse itaque, ducimus sapiente error
+          dolorum atque totam ut officiis deserunt quam. Id repudiandae placeat
+          doloremque dolore maiores voluptatum, sed voluptatibus! Suscipit
+          explicabo quae reiciendis voluptatibus, cumque dignissimos corporis,
+          expedita in necessitatibus quas soluta maiores enim earum quasi! Sint
+          sit id dolores tenetur fugit rem odio debitis similique nam. Numquam,
+          exercitationem voluptas! Aspernatur nihil consequuntur esse
+          temporibus. Veritatis exercitationem provident cumque odio magnam
+          ratione, quia deserunt possimus.
+        </p>
+        <br />
+        <p align="center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+          delectus amet exercitationem officiis est qui voluptatem quasi aliquam
+          itaque dolores cupiditate vel explicabo suscipit eligendi, placeat
+          quod optio atque, expedita numquam quos tempora non. Porro vitae quo
+          cupiditate nemo aut fugit consequatur esse. Soluta exercitationem
+          similique dignissimos unde optio sunt, officiis eum autem pariatur
+          quod provident ex suscipit repellendus illo cum minus voluptates
+          veritatis ratione dolorum ipsam animi maxime deserunt, odio iusto.
+          Corporis rerum, optio repudiandae quia placeat ipsum ullam aperiam
+          culpa enim sunt dignissimos, velit tenetur est, ea aspernatur itaque?
+          Incidunt non ipsam voluptatem ea suscipit eaque voluptatum corporis.
+        </p>
+      </div>
+      <div class="footer">
+        <h5>&copy; 2022 HTML. All Rights Reserved</h5>
+      </div>
+    </div>
+  </body>
+</html>
