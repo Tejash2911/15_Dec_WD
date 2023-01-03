@@ -5,29 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill Figure</title>
-    <style>
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5vh;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
+    <center>
       <table border="0" style="width: 30%; height: 90vh">
         <tr>
           <td
-            align="center"
             colspan="2"
-            style="background-color: #000; color: #fff; font-size: large"
+            style="
+              background-color: #000;
+              color: #fff;
+              font-size: large;
+              text-align: center;
+            "
           >
             Invoice
           </td>
         </tr>
         <tr>
-          <td colspan="2" style="height: 100px">
+          <td colspan="2">
             <i>
               Civil char rasta,<br />
               Ringroad,<br />
@@ -40,7 +36,7 @@
             <b>Some Company <br />c/o Some Guy</b>
           </td>
           <td align="right">
-            <table border="1" rules="all" style="line-height: 25px">
+            <table border="1" rules="all" cellpadding="5px">
               <tr>
                 <td>Invoice#</td>
                 <td>101138</td>
@@ -61,7 +57,8 @@
             <table
               border="1"
               rules="all"
-              style="width: 100%; line-height: 25px"
+              style="width: 100%; text-align: center"
+              cellpadding="5px"
             >
               <tr>
                 <td>Item</td>
@@ -82,7 +79,7 @@
         </tr>
         <tr>
           <td colspan="2" align="right">
-            <table border="1" rules="all" style="line-height: 25px">
+            <table border="1" rules="all" cellpadding="5px">
               <tr>
                 <td>Total</td>
                 <td>Rs. 600.00</td>
@@ -107,6 +104,6 @@
           </td>
         </tr>
       </table>
-    </div>
+    </center>
   </body>
 </html>
