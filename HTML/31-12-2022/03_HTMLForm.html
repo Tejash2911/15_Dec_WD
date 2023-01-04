@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--  style="border-width: 2px; border-color: black; border-style: solid" -->
+  <body>
+    <!-- it is html form 
+        action -> page name which you want to forwarded
+
+        method -> there is two type of method -> get / post
+        get -> it is display form information in URL. or it has some limitation to display value. max - 255
+
+        post -> it is secure. it is wrap / bind form information and send to the next page.
+    -->
+    <form action="02_progress.html" method="get" name="form1">
+      <!-- input type text -->
+      <label for="">input type text</label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="Enter First name"
+        required
+      />
+      <br /><br />
+      <!-- input type radio -> used to select option from many options 
+        give same name in input type radio.
+    -->
+      <label for="">input type radio</label>
+      <input type="radio" name="gen" checked /><label for="">Male</label>
+      <input type="radio" name="gen" /><label for="">Female</label>
+      <input type="radio" name="gen" /><label for="">Others</label> <br /><br />
+
+      <!-- input type checkbox -> used to many selection from given options-->
+      <label for="">input type checkbox</label>
+      <input type="checkbox" name="c1" /><label for="">HTML</label>
+      <input type="checkbox" name="c2" /><label for="">CSS</label>
+      <input type="checkbox" name="c3" /><label for="">JS</label> <br /><br />
+
+      <!-- dropdown list -> select-option -->
+      <label for="">select and option</label>
+      <select name="" id="">
+        <option value="">---select---</option>
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JS</option>
+      </select>
+      <br /><br />
+      <!-- text area -> summary, feedback, address -->
+      <label for="">textarea</label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="3"
+        placeholder="Type address"
+        required
+      ></textarea>
+      <br /><br />
+
+      <!-- input type date -> calendar -> html5 -->
+      <label for="">input type date</label>
+      <input type="date" name="" id="" />
+      <br /><br />
+      <!-- upload file -> input type file -->
+      <label for="">input type file</label>
+      <input type="file" name="" id="" />
+      <br /><br />
+      <!-- select number -->
+      <label for="">input type number</label>
+      <input type="number" name="" id="" />
+      <br /><br />
+
+      <!-- input type color -> select colors from pallate -->
+      <label for="">input type color</label>
+      <input type="color" />
+      <br /><br />
+
+      <!-- updation -> html5 -->
+      <label for="">input type datetime</label>
+      <input type="datetime" />
+      <br /><br />
+
+      <!-- updation -> html5 -->
+      <label for="">input type datetime-local</label>
+      <input type="datetime-local" name="" id="" />
+      <br /><br />
+
+      <!-- updation -> html5 -->
+      <label for="">input type email</label>
+      <input type="email" placeholder="Email" />
+      <br /><br />
+
+      <!-- input type image work like button -->
+      <label for="">input type image</label>
+      <input
+        type="image"
+        name=""
+        id=""
+        src="./img/img1.jpg"
+        height="50px"
+        width="50px"
+      />
+      <br /><br />
+
+      <!-- input type month -> HTML5-->
+      <label for="">input type month</label>
+      <input type="month" name="" id="" />
+      <br /><br />
+      <label for="">input type password</label>
+      <input type="password" placeholder="password" />
+      <br /><br />
+
+      <!-- input type range -> HTML5 -->
+      <label for="">input type range</label>
+      <input type="range" />
+      <br /><br />
+      <!-- HMTL5 -->
+      <label for="">input type search</label>
+      <input type="search" />
+      <br /><br />
+      <label for="">input type time</label>
+      <input type="time" /><br /><br />
+      <label for="">input type week</label>
+      <input type="week" /><br /><br />
+      <label for="">input type tel</label>
+      <input type="tel" /><br /><br />
+      <label for="">input type submit</label>
+      <input type="submit" value="Register" />
+      <label for="">input type button</label>
+      <input type="button" value="Button" />
+      <label for="">input type reset</label>
+      <input type="reset" value="clear" />
+      <label for="">button</label>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
