@@ -1,0 +1,122 @@
+1.What are the new tags added in HTML5? 
+Ans->	Following are some new tags added in html5.
+	-> audio tag:
+		The <audio> tag is used to embed audio files on a web page. 
+	-> video tag:
+		The <video> tag is used to embed video files on a web page.
+	-> header tag:
+		The <header> tag represents the header of a section or page.
+	-> footer tag:
+		The <footer> tag represents the footer of a section or page.
+	-> nav tag:
+		The <nav> tag represents a section of the page that contains navigation links.
+	-> canvas tag:
+		The <canvas> tag is used to create graphics and visualizations on the fly using JavaScript.
+	-> svg tag:
+		The <svg> tag is used to create vector graphics in webpage.
+	-> datalist tag:
+		The <datalist> tag is used to create a list of options that can be used in a form input field.
+	-> details and summary tag:
+		The <details> tag represents a summary or a description of a section of content.
+		The <summary> tag is used to provide a summary or a heading for the content.
+		The <summary> tag should be placed within the <details> tag.
+	-> figure and figcaption tag:
+		The <figure> tag is used to wrap the content, and the <figcaption> tag is used to provide a caption for the content.
+		The <figcaption> tag should be placed within the <figure> tag.
+	-> mark tag:
+		The <mark> tag is used to highlight text for reference purposes, such as to mark a search term in the text.
+	-> progress tag:
+		The <progress> tag is used to represent the progress of a task, such as a download or a form submission.
+	-> section tag:
+		The <section> tag represents a standalone section of content, such as a chapter, a widget, or a tab.
+	-> source tag:
+		The <source> tag is used in conjunction with the <audio> and <video> tags to specify multiple sources for media files.		
+	-> time tag:
+		The <time> tag is used to represent a time or a date.
+	-> article tag:
+		The <article> element represents a standalone piece of content, such as a blog post, a news article, or a forum post.
+
+
+
+
+2.How to embed audio and video in a webpage?
+Ans->	To embed audio and video in a web page in HTML, we can use the <audio> and <video> tags.
+	The <audio> tag is used to embed audio files on a web page.
+	It is written as <audio src="url">, where src is an attribute that specifies the URL of the audio file.
+	For example,
+		<audio src="song.mp3" controls>
+  			Your browser does not support the audio element.
+		</audio>
+	In this example, the src attribute specifies the URL of the audio file (song.mp3) and the controls attribute adds playback controls to the audio player. 
+	The <video> tag is used to embed video files on a web page.
+	It is written as <video src="url">, where src is an attribute that specifies the URL of the video file.
+	For example,
+		<video src="video.mp4" controls>
+  			Your browser does not support the video element.
+		</video>
+	In this example, the src attribute specifies the URL of the video file (video.mp4) and the controls attribute adds playback controls to the video player.
+	We can also use the <source> tag to specify multiple sources for audio and video files.
+	For example, we can use the <source> tag to provide different formats of the same audio or video file to ensure that the file is played on as many devices as possible.
+	For example,
+		<audio controls>
+  			<source src="song.mp3" type="audio/mpeg">
+  			<source src="song.ogg" type="audio/ogg">
+		</audio>
+	That's how we can embed audio and video in a webpage.
+
+
+
+
+3.Semantic element in HTML5?
+Ans->	HTML5 introduces a number of new elements that are designed to improve the semantics (meaning) of web content.
+	These elements are called semantic elements, and they provide a more meaningful and structured way to represent content on the web.
+	Some of the new semantic elements introduced in HTML5 include:
+	-> <article>:
+		The <article> element represents a standalone piece of content, such as a blog post, a news article, or a forum post.
+	-> <aside>:
+		The <aside> element represents content that is tangentially related to the content surrounding it, such as a sidebar or a note.
+	-> <details>:
+		The <details> element represents a summary or explanation that can be expanded or collapsed by the user.
+	-> <header>:
+		 The <header> element represents the header of a section or page.
+	-> <nav>:
+		The <nav> element represents a section of the page that contains navigation links.
+	-> <footer>:
+		The <footer> element represents the footer of a section or page.
+	-> <section>:
+		The <section> element represents a standalone section of content, such as a chapter, a widget, or a tab.
+	-> <mark>:
+		The <mark> element is used to highlight text for reference purposes, such as to mark a search term in the text.
+	-> <figure>:
+		The <figure> element represents a piece of self-contained content, such as an image or a diagram, along with a caption.
+	-> <figcaption>:
+		The <figcaption> element represents a caption for a <figure> element.
+
+
+
+
+4.Canvas and SVG tags
+Ans->	Both the <canvas> and <svg> tags are useful for drawing graphics on a web page.
+	The <canvas> tag is an HTML5 element that is used to draw graphics on a web page.
+	It is written as <canvas width="w" height="h"></canvas>, where width and height are attributes that specify the width and height of the canvas in pixels.
+	The canvas is a blank area on the page, and you can draw on it using JavaScript.
+	Here's an example of how to use the <canvas> tag to draw a rectangle on a web page:
+	<canvas id="myCanvas" width="200" height="100"></canvas>
+	<script>
+  		var canvas = document.getElementById("myCanvas");
+  		var context = canvas.getContext("2d");
+  		context.fillStyle = "red";
+  		context.fillRect(10, 10, 50, 50);
+	</script>
+	In this example, the <canvas> tag is used to create a canvas element with a width of 200 pixels and a height of 100 pixels.
+	The <script> tag is used to draw a red rectangle on the canvas using JavaScript.
+	
+	The <svg> tag is an HTML element that is used to draw graphics on a web page using Scalable Vector Graphics (SVG).
+	SVG is a vector graphics format that is based on XML, and it allows you to create scalable graphics that can be resized without losing quality.
+	Here's an example of how to use the <svg> tag to draw a rectangle on a web page:
+	<svg width="200" height="100">
+  		<rect x="10" y="10" width="50" height="50" fill="red"></rect>
+	</svg>
+	In this example, the <svg> tag is used to create a canvas element with a width of 200 pixels and a height of 100 pixels.
+	The <rect> tag is used to draw a red rectangle on the canvas.
+				
