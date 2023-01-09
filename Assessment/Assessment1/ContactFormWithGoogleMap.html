@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Title -->
+    <div class="contactUs">
+      <div class="title">
+        <h1>CONTACT US</h1>
+        <hr color="gray" />
+      </div>
+
+      <!-- Address Bar -->
+      <div class="contact_info">
+        <div class="address">
+          ADDRESS:
+          <address>
+            Saint Marco Street, 6th <br />
+            floor, Tokyo, Japan, 123456.
+          </address>
+        </div>
+        <div class="contact">
+          <span style="color: lightcoral"
+            ><i class="fa-solid fa-square-phone"></i>+91 1234567890</span
+          ><br />
+          <span style="color: skyblue"
+            ><i class="fa-solid fa-envelope"></i>example@gmail.com</span
+          >
+        </div>
+        <div class="locationpin">
+          <i style="color: #ea4335" class="fa-solid fa-location-dot fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <!-- Form -->
+        <div class="form">
+          <form action="#" method="post" id="contact_form">
+            <div class="name">
+              <input
+                type="text"
+                placeholder="Name :"
+                name="name"
+                id="name"
+                minlength="3"
+                maxlength="6"
+                required
+              />
+            </div>
+
+            <div class="company">
+              <input
+                type="text"
+                placeholder="Company :"
+                name="name"
+                id="company"
+                required
+              />
+            </div>
+
+            <div class="email">
+              <input
+                type="email"
+                placeholder="Email :"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+
+            <div class="mobile">
+              <input
+                type="text"
+                placeholder="Mobile :"
+                name="mobile"
+                id="mobile"
+                maxlength="10"
+                required
+              />
+            </div>
+
+            <div class="message">
+              <textarea
+                name="message"
+                placeholder="Message :"
+                id="message"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="submit">
+              <input
+                type="submit"
+                name="submit"
+                value="Send"
+                id="submit_button"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- Map -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41264385462!2d72.75225630862496!3d21.15934583206193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1673175697113!5m2!1sen!2sin"
+            width="600"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="icons">
+            <i
+              style="color: #4267b2"
+              class="fa-brands fa-square-facebook fa-2x"
+            ></i>
+            <i
+              style="color: #1da1f2"
+              class="fa-brands fa-square-twitter fa-2x"
+            ></i>
+            <i style="color: #0077b5" class="fa-brands fa-linkedin fa-2x"></i>
+            <i
+              style="color: #171515"
+              class="fa-brands fa-square-github fa-2x"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

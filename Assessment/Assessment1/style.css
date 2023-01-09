@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: skyblue;
+  width: 100%;
+  height: 80vh;
+}
+
+.contactUs {
+  margin-top: 80px;
+  padding: 40px 310px;
+}
+
+.title h1 {
+  color: #474544;
+  font-weight: 500;
+}
+
+.contact_info {
+  background: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.address {
+  margin-left: 50px;
+}
+
+.locationpin {
+  margin-right: 50px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  margin-top: 30px;
+}
+
+.form {
+  width: 50%;
+}
+
+i {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* form */
+
+input[type="text"],
+[type="email"],
+textarea {
+  color: #474544;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #ea4335;
+  color: white;
+  padding: 10px 15px;
+  margin: 20px;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.name,
+.email {
+  float: left;
+  width: 45%;
+}
+
+.company,
+.mobile {
+  float: right;
+  width: 45%;
+}
+
+.form,
+.map {
+  padding: 35px;
+}
