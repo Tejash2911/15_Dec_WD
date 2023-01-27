@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form With Image</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        height: 99vh;
+        width: 100%;
+        margin: 5px auto;
+        background: url(images/flower.jpg) center no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .form_container {
+        background-color: white;
+        height: auto;
+        width: auto;
+        padding: 60px;
+        margin-right: 200px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: sans-serif;
+      }
+      form input,
+      button {
+        height: 50px;
+        border-radius: 100px;
+        border: 1px solid rgb(218, 215, 215);
+        padding: 10px;
+      }
+      form h3 {
+        color: rgb(45, 153, 45);
+      }
+      form button {
+        color: white;
+        background-color: rgb(45, 153, 45);
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="blank"></div>
+      <div class="form_container">
+        <form action="#">
+          <h3>LANDFARM</h3>
+          <h1>Request Call Back Cources</h1>
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Phone" required />
+          <input type="text" placeholder="Subject" required />
+          <button type="submit">Get It Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
