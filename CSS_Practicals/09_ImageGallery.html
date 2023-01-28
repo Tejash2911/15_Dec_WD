@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+      .gallery {
+        display: flex;
+        padding: 2px;
+        transition: 0.3s;
+        border: 2px solid black;
+      }
+      .gallery__column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        gap: 50px;
+        margin: 20px 0;
+      }
+      .gallery__link {
+        margin: 2px;
+        overflow: hidden;
+      }
+      .gallery__image {
+        display: block;
+        width: 100%;
+        transition: 0.3s;
+        border: 1px solid black;
+      }
+      .gallery__thumb {
+        position: relative;
+      }
+      .gallery__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        color: white;
+        opacity: 0;
+        transition: 0.3s;
+      }
+      .gallery__link:hover .gallery__caption {
+        opacity: 1;
+      }
+      .image1:hover {
+        transform: rotate(90deg);
+      }
+      .image2:hover {
+        transform: scale(1.5);
+      }
+      .image3:hover {
+        transform: skewX(20deg);
+      }
+      .image4:hover {
+        transform: translate(20px, 0);
+      }
+      .image5:hover {
+        transform: skewY(20deg);
+      }
+      .image6:hover {
+        transform: translate(0, 20px);
+      }
+      .image7:hover {
+        transform: skew(-20deg, -20deg);
+      }
+      .image8:hover {
+        transform: translate(20px, 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="gallery__column">
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_1.jpg" alt="" class="gallery__image image1" />
+            <figcaption class="gallery__caption">Image 1</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_2.jpg" alt="" class="gallery__image image2" />
+            <figcaption class="gallery__caption">Image 2</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="gallery__column">
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_3.jfif" alt="" class="gallery__image image3" />
+            <figcaption class="gallery__caption">Image 3</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_4.jfif" alt="" class="gallery__image image4" />
+            <figcaption class="gallery__caption">Image 4</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="gallery__column">
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_5.jpg" alt="" class="gallery__image image5" />
+            <figcaption class="gallery__caption">Image 5</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_6.jfif" alt="" class="gallery__image image6" />
+            <figcaption class="gallery__caption">Image 6</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="gallery__column">
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_7.jfif" alt="" class="gallery__image image7" />
+            <figcaption class="gallery__caption">Image 7</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="gallery__link">
+          <figure class="gallery__thumb">
+            <img src="images/300_8.jfif" alt="" class="gallery__image image8" />
+            <figcaption class="gallery__caption">Image 8</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

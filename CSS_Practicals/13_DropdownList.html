@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown List</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      nav {
+        background-color: skyblue;
+      }
+      nav ul {
+        list-style: none;
+        position: relative;
+      }
+      nav ul li {
+        display: inline-block;
+        padding: 20px;
+        height: 100%;
+      }
+      nav ul li:hover {
+        background-color: rgb(49, 187, 241);
+      }
+      .dropdownlist {
+        display: none;
+        position: absolute;
+        background-color: rgb(128, 231, 231);
+      }
+      nav ul li:hover .dropdownlist {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul class="dropdownlist">
+            <li><a href="#">Service1</a></li>
+            <li><a href="#">Service2</a></li>
+            <li><a href="#">Service3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
