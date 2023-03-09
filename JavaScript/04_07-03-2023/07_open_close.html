@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .button__container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      height: 40px;
+      width: 60px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="button__container">
+    <button onclick="open_fn()">Open</button>
+    <button onclick="close_fn()">Close</button>
+  </div>
+
+  <script>
+    let links = "https://www.w3schools.com/js/js_versions.asp";
+    let win;
+
+    function open_fn() {
+      win = window.open(links);
+      // win = window.open(links, "", "height=1000 width=500");
+    }
+
+    function close_fn() {
+      win.close();
+    }
+  </script>
+
+</body>
+
+</html>
