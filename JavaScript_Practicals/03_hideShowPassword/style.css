@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+input.check {
+    height: 30px;
+    width: 30px;
+}
