@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="index.php" method="get" id="form1" name="form1" onsubmit="return validateForm()">
+            <h1>Registration For Job</h1>
+            <div class="row" id="first">
+                <div class="col-1">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter First Name"
+                        onblur="return fnameRegEx()" />
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="last">
+                <div class="col-1">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter Last Name"
+                        onblur="return lnameRegEx()" />
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="add">
+                <div class="col-1">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-2">
+                    <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter Address"
+                        onblur="return addressRegEx()"></textarea>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="date">
+                <div class="col-1">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-2">
+                    <input type="Date" id="dob" name="dob" />
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="gen">
+                <div class="col-1">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-2">
+                    <input type="radio" id="male" name="gender" value="male" /> Male
+                    <input type="radio" id="female" name="gender" value="female" /> Female
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="exp">
+                <div class="col-1">
+                    <label for="experience" required>Experience:</label>
+                </div>
+                <div class="col-2">
+                    <select name="experience" id="experience">
+                        <option value="-1">Select Experience:</option>
+                        <option value="1year">1year</option>
+                        <option value="2year">2year</option>
+                        <option value="3year">3year</option>
+                        <option value="4year">4year</option>
+                        <option value="5year">5year</option>
+                    </select>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="mob">
+                <div class="col-1">
+                    <label for="mobile">Mobile No:</label>
+                </div>
+                <div class="col-2">
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile No" maxlength="10"
+                        onblur="return mobileRegEx()" />
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="em">
+                <div class="col-1">
+                    <label for="email">Email Id:</label>
+                </div>
+                <div class="col-2">
+                    <input type="email" id="email" name="email" placeholder="Enter Email"
+                        onblur="return emailRegEx()" />
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="pass">
+                <div class="col-1">
+                    <label for="password">Create Password:</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" id="password" name="password" maxlength="12" placeholder="Enter Password"
+                        onblur="return passwordRegEx()" />
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row" id="check">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="checkbox" name="" id="" onclick="return showPass()" /> Show Password
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="submit" value="Register" />
+                </div>
+                <div class="error"></div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
