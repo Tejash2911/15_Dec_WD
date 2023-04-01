@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.form__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    outline: none;
+}
+
+#password-strength {
+    padding: 5px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.weak-pass {
+    background-color: #ce1d14;
+}
+
+.medium-pass {
+    background-color: #b7d60a;
+}
+
+.strong-pass {
+    background-color: #12CC1A;
+}
