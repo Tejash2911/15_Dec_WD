@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // Write a program to Show an alert
+      function que1() {
+        alert("Write a program to show an alert");
+      }
+      // What will be the result for these expressions?
+      function que2() {
+        console.log(5 > 4);
+        console.log("apple" > "pineapple");
+        console.log("2" > "12");
+        console.log(undefined == null);
+        console.log(undefined === null);
+        console.log(null == "\n0\n");
+        console.log(null === "\n0\n");
+        console.log(typeof "0");
+        console.log(null || 2 || undefined);
+      }
+      // Will alert be shown?
+      function que3() {
+        if ("0") {
+          alert("Yes Alert Will Show");
+        }
+      }
+      // What is the code below going to output? alert( null || 2 || undefined );
+      function que4() {
+        alert(null || 2 || undefined);
+      }
+      // The following function returns true if the parameter age is greater than 18. Otherwise it asks for a confirmation and returns its result:
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        } else {
+          return confirm("Did Parent Allows You??");
+        }
+      }
+      //   Replace Function Expressions with arrow functions in the code below:
+      /*
+                        function ask(question, yes, no) {
+                          if (confirm(question)) yes();
+                          else no();
+                        }
+                        function yes() {
+                          alert("You Agreed");
+                        }
+                        function no() {
+                          alert("You Didn't Agreed");
+                        }
+
+                        ask("Do You Agree?", yes, no);
+        */
+
+      function que6() {
+        let ask = (question, yes, no) => {
+          if (confirm(question)) yes();
+          else no();
+        };
+        let yes = () => {
+          alert("You Agreed");
+        };
+        let no = () => {
+          alert("You Didn't Agree");
+        };
+
+        ask("Do You Agree?", yes, no);
+      }
+
+      // Data Types and Object
+      // Create an Empty Object user
+      let user = {};
+      // Add the property name with the value John
+      user.name = "John";
+      // Add the property surname with the value Smith.
+      user.surname = "Smith";
+      //  Change the value of the name to Pete.
+      user.name = "Pete";
+      // Remove the property name from the object.
+      delete user.name;
+      console.log(user);
+
+      // Is array copied?
+      let fruits = ["Apples", "Pear", "Orange"];
+      // push a new value into the "copy"
+      let shoppingCart = fruits;
+      shoppingCart.push("Banana");
+      // what's in fruits?
+      console.log(fruits);
+      console.log(fruits.length);
+
+      //  Map to names
+      //   let john = { name: "John", age: 25 };
+      //   let pete = { name: "Pete", age: 30 };
+      //   let mary = { name: "Mary", age: 28 };
+      //   let users = [john, pete, mary];
+      // Alert Names
+      //   let names = users.map((ele) => ele.name);
+      //   alert(names);
+
+      // Map to objects
+      let john = { name: "John", surname: "Smith", id: 1 };
+      let pete = { name: "Pete", surname: "Hunt", id: 2 };
+      let mary = { name: "Mary", surname: "Key", id: 3 };
+      let users = [john, pete, mary];
+      let userMapped = users.map((ele) => {
+        let fullName = ele.name + " " + ele.surname;
+        let id = ele.id;
+        return { fullName: fullName, id: id };
+      });
+      console.log(userMapped);
+      console.log(userMapped[0].id);
+      console.log(userMapped[0].fullName);
+
+      // Sum the properties There is a salaries object with arbitrary number of salaries. Write
+      // the function sumSalaries(salaries) that returns the sum of all salaries using
+      // Object.values and the for..of loop.If salaries is empty, then the result must be 0.
+      let salaries = {
+        John: 100,
+        Pete: 300,
+        Mary: 250,
+      };
+      let salaries2 = {
+        1: 500,
+        2: 1000,
+        3: 1500,
+      };
+      function sumSalaries(value) {
+        let arr = Object.values(value);
+        return arr.reduce((lastIndex, index) => {
+          return lastIndex + index;
+        });
+      }
+      console.log(sumSalaries(salaries)); // 650
+      console.log(sumSalaries(salaries2)); // 3000
+
+      //   Destructuring assignment We have an object: Write the Destructuring assignment that
+      //   reads:
+      //   a) Name property into the variable name.
+      //   b) Year’s property into the variable age.
+      //   c) isAdmin property into the variable isAdmin (false, if no such property)
+      //   d) let user = { name: "John", years: 30};
+
+      let user1 = { name: "John", years: 30 };
+      let { name, years: age, isAdmin } = user1;
+      console.log(name);
+      console.log(age);
+      console.log(isAdmin || false);
+
+      //   Turn the object into JSON and back Turn the user into JSON and then read it back
+      //   into another variable.
+      //   user = { name: "John Smith", age: 35};
+      let user2 = { name: "John Smith", age: 35 };
+      let jsn = JSON.stringify(user2);
+      console.log(jsn);
+      let backToObj = JSON.parse(jsn);
+      console.log(backToObj);
+    </script>
+  </head>
+
+  <body>
+    <button onclick="que1()">program to show an alert</button>
+    <button onclick="que2()">What will be the result for expressions?</button>
+    <button onclick="que3()">if ("0")</button>
+    <button onclick="que4()">(null || 2 || undefined)</button>
+    <button onclick="checkAge(25)">checkAge</button>
+    <button onclick="que6()">
+      Replace Function Expressions with arrow functions
+    </button>
+  </body>
+</html>
