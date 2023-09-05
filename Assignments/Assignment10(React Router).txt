@@ -1,0 +1,6 @@
+1.Create React app with modules and lazy loading (Admin-user module with
+child Router and outlet)
+Ans->	Created E-Commerce Shopping Site.
+	Layout uploaded on github.
+	-:path:-
+	https://github.com/Tejash2911/React
