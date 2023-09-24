@@ -1,0 +1,105 @@
+1.What is Redux?
+Ans->	Redux is an open-source JavaScript library commonly used for managing the state of web applications in a predictable and centralized manner.
+	It is often associated with React, but it can be used with other JavaScript frameworks or libraries as well.
+	Redux follows the principles of Flux, which is an architectural pattern for building user interfaces.
+	It provides a unidirectional data flow, which means that data in an application flows in a single direction,
+	   making it easier to understand and debug complex state management.
+	Here are some key concepts and components of Redux:
+	1.Store:
+	-> The store is the central repository for the application's state. It holds the entire state tree of the application. 
+	-> You can think of it as a JavaScript object that represents the state of your application.
+	2.Actions:
+	-> Actions are plain JavaScript objects that describe an event that occurred in the application.
+	-> They typically have a "type" field that indicates the type of action and may include additional data as needed.
+	-> Actions are dispatched to the store to trigger state changes.
+	3.Reducers: 
+	-> Reducers are pure functions that specify how the application's state should change in response to actions.
+	-> They take the current state and an action as input and return a new state object.
+	-> Reducers are responsible for updating the state immutably,
+	   which means they don't modify the existing state but create a new state object with the desired changes.
+	4.Dispatch:
+	-> Dispatch is a method provided by the Redux store that allows you to send actions to the store.
+	-> When an action is dispatched, it triggers the execution of the corresponding reducer(s) to update the state.
+	5.Selectors:
+	-> Selectors are functions used to extract specific pieces of data from the state tree. 
+	-> They help in efficiently accessing and computing derived data from the state.
+	6.Middleware:
+	-> Middleware in Redux provides a way to extend the store's behavior.
+	-> It can be used for tasks such as logging, handling asynchronous actions, and more.
+	-> Popular middleware includes Redux Thunk for handling asynchronous actions and Redux Saga for more complex asynchronous workflows.
+
+	Redux promotes a strict separation of concerns and encourages a predictable and testable approach to managing application state.
+	It is particularly well-suited for applications with complex and shared state, such as large-scale web applications.
+	While it can add some initial complexity to a project, it often pays off in terms of maintainability and scalability as the application grows.
+
+
+
+2.What is Redux Thunk used for?
+Ans->	-> Redux Thunk is a middleware for Redux, a JavaScript library commonly used for managing the state of web applications.
+	-> Redux Thunk is specifically designed to handle asynchronous actions in Redux.
+	-> In Redux, actions are typically synchronous and represent events or changes in your application's state.
+	-> However, there are cases where you need to perform asynchronous operations,
+	   such as making API requests, before dispatching an action to update the state. This is where Redux Thunk comes into play.
+	-> Redux Thunk allows you to write action creators (functions that create actions) that return functions instead of plain action objects.
+	-> These functions, known as "thunks," have access to the Redux store's dispatch and getState methods,
+	   which allows them to dispatch multiple actions, including asynchronous ones.
+	-> Redux Thunk is a popular choice for handling asynchronous actions in Redux due to its simplicity and compatibility.
+	-> However, there are also other Redux middleware options like Redux Saga and Redux Observable,
+	   which offer more advanced control over asynchronous flows and side effects.
+	-> Your choice of middleware depends on the complexity and requirements of your application.
+
+
+
+3.What is Pure Component? When to use Pure Component over Component?
+Ans->	-> In React, both PureComponent and Component are base classes that you can use to create components.
+	-> However, they have different behaviors, and you should choose between them based on your component's specific needs.
+	1.Component:
+	-> Component is the base class for creating React components. 
+	-> When you extend Component to create a custom component, it does not perform any optimization for re-renders by default. 
+	-> This means that every time the component's render method is called,
+	   it will re-render the component, even if the component's state or props have not changed.
+	2.PureComponent:
+	-> PureComponent is a subclass of Component that is optimized for scenarios where you want to prevent unnecessary re-renders.
+	-> It performs a shallow comparison of the component's props and state to determine whether it should update or not.
+	-> If the props and state haven't changed, a PureComponent will prevent a re-render, which can be a performance optimization.
+
+	When to Use PureComponent over Component:
+	-> Props and State Comparisons:
+		When your component's rendering logic depends only on the equality of its props and state. In such cases,
+		PureComponent can help prevent unnecessary re-renders by automatically handling shallow comparisons.
+	-> Performance Optimization: 
+		When optimizing the performance of your application is a priority, and you want to reduce the number of render cycles. 
+		PureComponent can be especially beneficial in large and complex component hierarchies.
+	-> Default Choice for Stateless Functional Components:
+		For stateless functional components,
+		you can often use React.memo (a higher-order component) instead of PureComponent to achieve similar optimizations.
+		React.memo automatically performs prop comparisons and prevents re-renders when props haven't changed.
+		This is a good choice for simple, pure presentational components.
+
+
+
+4.What is the second argument that can optionally be passed tosetState and what is its purpose?
+Ans->	-> In React, the setState function is used to update a component's state.
+	-> It can optionally take a second argument, which is a callback function.
+	-> The purpose of this callback function is to execute code after the setState operation is completed and the component has been re-rendered.
+	-> The second argument to setState is a function that will be called once the state update is applied and the component is re-rendered.
+	-> This can be useful in various scenarios,
+	   such as when you need to perform some action or logic after the state has been updated and the UI has been updated to reflect the new state.
+
+
+
+5.Create a Table and Search data from table using React Js?
+Ans->	Created a Table and Serach data from table using React Js.
+	Layout Uploaded on Github.
+	PATH:
+	https://www.github.com/Tejash2911/React
+
+	
+	
+		
+	
+
+
+
+
+
