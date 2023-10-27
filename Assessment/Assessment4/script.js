@@ -5,7 +5,8 @@ function addTodo() {
     if (todoName.length == 0) {
         alert("Please Enter a task😄");
     } else {
-        todoList.set(todoName, todoName);
+        const id = Date.now();
+        todoList.set(id, todoName);
         printList();
         document.querySelector('#todoName').value = "";
     }
@@ -20,6 +21,7 @@ function printList() {
                 </div>`;
     })
     document.querySelector("#todoList").innerHTML = str;
+    console.log(todoList);
 }
 
 function deleteTodo(id) {
@@ -35,4 +37,5 @@ function clearTodo() {
     }
     printList();
 }
+
 
